@@ -1,0 +1,69 @@
+/* Letras */
+//Variables
+//Fuentes
+$destacado: 'Oleo Script', cursive;
+$botonesOlinks: 'Open Sans', sans-serif;
+$textoOinput: 'Karla', sans-serif;
+$titSecc: 'Mulish', sans-serif;
+//Tamaños letras pantalla mobile
+$tamDestacado1: 30pt;
+$tamDestacado2: 20pt;
+$tamBotones: 9pt;
+$tamInput:9pt;
+$tamTexto:9pt;
+$tamTitSecc1: 15pt;
+$tamTitSecc2:12pt;
+$tamTitSecc3:11pt;
+
+
+//Funciones
+@mixin tipoLetraGeneral($letra,$color){
+    font-family: $letra;
+    color: $color;
+}
+
+//Letras por jerarquía
+.destacado1{
+    text-align: center;
+    @include tipoLetraGeneral($destacado, map-get($colores,naranja));
+}
+.destacado2{
+    text-align: center;
+    @include tipoLetraGeneral($destacado, map-get($colores,rosa));
+}
+.separaSecc{
+    @include tipoLetraGeneral($titSecc, map-get($colores,blanco));
+}
+.separaSecc2{
+    @extend .separaSecc;
+}
+.separaSeccVerde{
+    @include tipoLetraGeneral($titSecc, map-get($colores,verde));
+}
+.separaSeccVerde{
+    @include tipoLetraGeneral($titSecc, map-get($colores,verde));
+}
+.separaSecc3Negra{
+    @include tipoLetraGeneral($titSecc, map-get($colores,negroClaro));
+}
+.apartLetra{
+    @include tipoLetraGeneral($textoOinput, map-get($colores,negroClaro));
+}
+
+.input{
+    input{
+        @include tipoLetraGeneral($textoOinput, map-get($colores,negroClaro));
+    }
+    
+}
+
+.botones a {
+    @include tipoLetraGeneral($botonesOlinks, map-get($colores,claro));
+    font-weight:bold;
+}
+
+.pie{
+    text-decoration: none;
+    @include tipoLetraGeneral($botonesOlinks, map-get($colores,naranja));
+    font-weight:bold;
+}
