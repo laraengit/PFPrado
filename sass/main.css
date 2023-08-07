@@ -299,6 +299,7 @@
 .gridBodyInfo {
   grid-template-areas: "encabezado " "mainInfo " "info" "pie";
   grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 2fr auto;
 }
 .gridBodyInfo .gridMainInfo {
   grid-area: mainInfo;
@@ -339,6 +340,18 @@
   text-align: center;
 }
 
+/* .imgAbajo {
+    position: sticky;
+    width:10%;
+    height:100%;
+} */
+/* .cambioSecc{
+    width:10%;
+    height:100%;
+    //display: inline;
+    //position: fixed;
+    z-index : 10000;
+     */
 #mandarAtras {
   z-index: -1;
 }
@@ -427,6 +440,10 @@
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .hoverBoton {
   border: 3px solid rgba(255, 255, 255, 0);
 }
@@ -445,6 +462,8 @@
 
 .fondoCielo {
   background-image: url(../images/cielo-con-nubes_5102x3567_xtrafondos.com.jpg);
+  /* background-repeat: no-repeat;
+  background-size:cover; */
 }
 
 .botones a {
@@ -461,7 +480,6 @@
 
 .pie {
   background-color: rgb(247, 247, 247);
-  height: 60px;
   padding: 10px;
 }
 .pie div a {
@@ -540,7 +558,13 @@ section.info {
   width: 80%;
   margin: 2% 10%;
   padding: 1%;
-  background-color: #eaf6de;
+  /* background-color: map-get($map: $colores, $key:verdeMuyClaro );  */
+}
+section.info a {
+  text-decoration: none;
+}
+section.info a :hover {
+  color: #7bbfbf;
 }
 
 /* Animaciones */

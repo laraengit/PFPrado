@@ -82,7 +82,7 @@
     "info"
     "pie";
     grid-template-columns:1fr;
-    //grid-template-rows:auto 1fr 2fr auto;
+    grid-template-rows:auto 1fr 2fr auto;
     .gridMainInfo{
         grid-area: mainInfo;
     }
@@ -128,6 +128,20 @@
         text-align: center;
     }
 }
+/* .imgAbajo {
+    position: sticky;
+    width:10%;
+    height:100%;
+} */
+
+/* .cambioSecc{
+    width:10%;
+    height:100%;
+    //display: inline;
+    //position: fixed;
+    z-index : 10000;
+     */
+
 #mandarAtras {
     z-index: -1;
 }

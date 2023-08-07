@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
 .hoverBoton{
     border:3px solid rgba(255, 255, 255, 0);
     &:hover{
@@ -26,6 +29,8 @@
 
 .fondoCielo {
     background-image: url(../images/cielo-con-nubes_5102x3567_xtrafondos.com.jpg);
+    /* background-repeat: no-repeat;
+    background-size:cover; */
 }
 
 .botones {
@@ -46,7 +51,7 @@
 
 .pie{
     background-color: rgb(247, 247, 247);
-    height: 60px;
+    //height: 60px;
     padding: 10px;
     div {
         a {
@@ -58,6 +63,7 @@
         img {
             width: auto;
             height:50px;
+            //height:auto;
         }
     }
     
@@ -142,6 +148,12 @@ section{
         width: 80%;
         margin: 2% 10%;
         padding: 1%;
-        background-color: map-get($map: $colores, $key:verdeMuyClaro );
+        /* background-color: map-get($map: $colores, $key:verdeMuyClaro );  */
+        a {
+            text-decoration: none;
+        }
+        a :hover{
+            color: map-get($map: $colores, $key: celeste);
+        }
     }
 }
