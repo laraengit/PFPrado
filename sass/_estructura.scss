@@ -20,6 +20,8 @@
     "encabezado  "
     "principal  "
     "seccion "
+    "carruselValidar"
+    "carruselGuia"
     "sponsors"
     "pie ";
     grid-template-columns: 1fr;
@@ -28,6 +30,12 @@
     }
     .gridSection {
         grid-area: seccion;
+    }
+    .gridCarrouselValidar {
+        grid-area: carruselValidar;
+    }
+    .gridCarrouselGuia {
+        grid-area: carruselGuia;
     }
     .gridSponsors{
         grid-area: sponsors;
@@ -157,6 +165,33 @@
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-around;
+    }
+}
+
+.comics {
+    margin: 2%;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+    &>div{
+        padding: 3%;
+        border: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        //justify-content: space-around;
+        //margin: 1%;
+        width: 90%;
+        &>div {
+            //padding: 3%;
+            width: 90%;
+        }
     }
 }
 /* Contacto */

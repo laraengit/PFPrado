@@ -7,8 +7,11 @@
     text-decoration: none;
 }
 
-a {
+a.link {
     text-decoration: none;
+}
+a.link :hover {
+    color: map-get($colores, celeste);
 }
 .hoverBoton{
     border:3px solid rgba(255, 255, 255, 0);

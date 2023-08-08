@@ -120,10 +120,10 @@
     width: 60%;
   }
   .destacado2 {
-    font-size: 20pt;
+    font-size: 28pt;
   }
   .destacado1 {
-    font-size: 30pt;
+    font-size: 35pt;
   }
   .botones a {
     font-size: 9pt;
@@ -164,10 +164,10 @@
     width: 40%;
   }
   .destacado2 {
-    font-size: 26pt;
+    font-size: 36.4pt;
   }
   .destacado1 {
-    font-size: 39pt;
+    font-size: 45.5pt;
   }
   .botones a {
     font-size: 11.7pt;
@@ -208,10 +208,10 @@
     width: 40%;
   }
   .destacado2 {
-    font-size: 28pt;
+    font-size: 39.2pt;
   }
   .destacado1 {
-    font-size: 42pt;
+    font-size: 49pt;
   }
   .botones a {
     font-size: 12.6pt;
@@ -256,7 +256,7 @@
 
 /* Index */
 .gridBodyInicio {
-  grid-template-areas: "encabezado  " "principal  " "seccion " "sponsors" "pie ";
+  grid-template-areas: "encabezado  " "principal  " "seccion " "carruselValidar" "carruselGuia" "sponsors" "pie ";
   grid-template-columns: 1fr;
 }
 .gridBodyInicio .gridMain {
@@ -264,6 +264,12 @@
 }
 .gridBodyInicio .gridSection {
   grid-area: seccion;
+}
+.gridBodyInicio .gridCarrouselValidar {
+  grid-area: carruselValidar;
+}
+.gridBodyInicio .gridCarrouselGuia {
+  grid-area: carruselGuia;
 }
 .gridBodyInicio .gridSponsors {
   grid-area: sponsors;
@@ -371,6 +377,29 @@
   justify-content: space-around;
 }
 
+.comics {
+  margin: 2%;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.comics > div {
+  padding: 3%;
+  border: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 90%;
+}
+.comics > div > div {
+  width: 90%;
+}
+
 /* Contacto */
 #contacto {
   margin-top: 10px;
@@ -440,8 +469,12 @@
   text-decoration: none;
 }
 
-a {
+a.link {
   text-decoration: none;
+}
+
+a.link :hover {
+  color: #7bbfbf;
 }
 
 .hoverBoton {
