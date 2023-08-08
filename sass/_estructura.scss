@@ -22,7 +22,6 @@
     "seccion "
     "carruselValidar"
     "carruselGuia"
-    "sponsors"
     "pie ";
     grid-template-columns: 1fr;
     .gridMain {
@@ -187,10 +186,11 @@
         align-items: center;
         //justify-content: space-around;
         //margin: 1%;
-        width: 90%;
+        width: 80%;
         &>div {
+            margin: 2%;
             //padding: 3%;
-            width: 90%;
+            width: 80%;
         }
     }
 }

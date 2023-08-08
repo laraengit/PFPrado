@@ -2,7 +2,8 @@
 //Variables
 //Fuentes
 $destacado: 'Oleo Script', cursive;
-$botonesOlinks: 'Open Sans', sans-serif;
+//$botonesOlinks: 'Open Sans', sans-serif;
+$botonesOlinks: 'Karla', sans-serif;
 $textoOinput: 'Karla', sans-serif;
 $titSecc: 'Mulish', sans-serif;
 //Tamaños letras pantalla mobile
@@ -59,11 +60,19 @@ $tamTitSecc3:11pt;
 
 .botones a {
     @include tipoLetraGeneral($botonesOlinks, map-get($colores,claro));
-    font-weight:bold;
+    //font-weight:bold;
 }
 
 .pie{
     text-decoration: none;
-    @include tipoLetraGeneral($botonesOlinks, map-get($colores,naranja));
-    font-weight:bold;
+    @include tipoLetraGeneral($botonesOlinks, map-get($colores,negroClaro));
+    //font-weight:bold;
+    a {
+        @include tipoLetraGeneral($textoOinput, map-get($colores,negroClaro));
+    }
+
+    a:hover {
+        color: map-get($map: $colores, $key: celeste);
+    }
+
 }

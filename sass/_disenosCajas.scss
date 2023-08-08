@@ -11,7 +11,7 @@ a.link {
     text-decoration: none;
 }
 a.link :hover {
-    color: map-get($colores, celeste);
+    color: map-get($map: $colores, $key: celeste);
 }
 .hoverBoton{
     border:3px solid rgba(255, 255, 255, 0);
@@ -56,12 +56,6 @@ a.link :hover {
     background-color: rgb(247, 247, 247);
     //height: 60px;
     padding: 10px;
-    div {
-        a {
-            text-decoration: none;
-            color: #FF914D;
-        }
-    }
     .logo {
         img {
             width: auto;
