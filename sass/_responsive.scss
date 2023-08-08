@@ -45,8 +45,11 @@ $grande:1200px;
 }
 /* Mobile */
 @media (max-width:$chico){
-    div.logo, div.copyright {
-        visibility: hidden;
+    .imgLogoGrande {
+        display: none;
+    }
+    div.copyright {
+        display: none;
     }
     .headerHeight {
         height: 80px;
@@ -54,8 +57,8 @@ $grande:1200px;
     #mod_der,#mod_izq {
         width: 100%;
         /* padding: 20px; */
-        margin-top: 2%;
-        margin-bottom: 2%;
+        margin-top: 3%;
+        margin-bottom: 3%;
     }
     #contacto > form > div {
         width: 60%;
@@ -64,14 +67,16 @@ $grande:1200px;
 }
 /* Tablet */
 @media (min-width:($chico + 1px)) and (max-width:$grande){
-
+    .imgLogoChica {
+        display: none;
+    }
     .headerHeight {
         height: 80px;
     }
     #mod_der,#mod_izq {
         width: 45%;
         padding: 1%;
-        margin: 2%;
+        margin: 3%;
     }
     #contacto > form > div {
         width: 40%;
@@ -80,14 +85,16 @@ $grande:1200px;
 }
 /* Computadora grande */
 @media (min-width:($grande + 1px)){
-   
+    .imgLogoChica {
+        display: none;
+    }
     .headerHeight {
         height: 80px;
     }
     #mod_der,#mod_izq {
         width: 45%;
         padding: 1%;
-        margin: 2%;
+        margin: 5%;
     }
     #contacto > form > div {
         width: 40%;

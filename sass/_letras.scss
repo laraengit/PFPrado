@@ -7,11 +7,11 @@ $botonesOlinks: 'Karla', sans-serif;
 $textoOinput: 'Karla', sans-serif;
 $titSecc: 'Mulish', sans-serif;
 //Tamaños letras pantalla mobile
-$tamDestacado1: 35pt;
-$tamDestacado2: 28pt;
+$tamDestacado1: 30pt;
+$tamDestacado2: 25pt;
 $tamBotones: 9pt;
 $tamInput:9pt;
-$tamTexto:9pt;
+$tamTexto:10pt;
 $tamTitSecc1: 15pt;
 $tamTitSecc2:12pt;
 $tamTitSecc3:11pt;
@@ -32,6 +32,10 @@ $tamTitSecc3:11pt;
     text-align: center;
     @include tipoLetraGeneral($destacado, map-get($colores,rosa));
 }
+.separaSeccNegra{
+    @include tipoLetraGeneral($titSecc, map-get($colores,negroClaro));
+}
+
 .separaSecc{
     @include tipoLetraGeneral($titSecc, map-get($colores,blanco));
 }
@@ -63,11 +67,17 @@ $tamTitSecc3:11pt;
     //font-weight:bold;
 }
 
+.botones {
+    @include tipoLetraGeneral($botonesOlinks, map-get($colores,claro));
+    //font-weight:bold;
+}
+
 .pie{
     text-decoration: none;
     @include tipoLetraGeneral($botonesOlinks, map-get($colores,negroClaro));
     //font-weight:bold;
     a {
+        text-decoration: none;
         @include tipoLetraGeneral($textoOinput, map-get($colores,negroClaro));
     }
 

@@ -153,19 +153,32 @@
     z-index: -1;
 }
 #mod_der,#mod_izq {
-    display: inline-block;
+    margin: 10%;
+    text-align: center;
+    display: inline;
 }
 #mod_izq {
     border: 0;
 }
-#modulos{
-    section{
+
+#mod_der{
+    .contengoBotones {
+        text-align: center;
         display: flex;
         flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-around;
+        align-items:center;
+        //justify-items: stretch;
+        justify-content: center;
+        a {
+            width: 15%;
+            padding: 0.5%;
+        }
+
+
     }
+    
 }
+
 
 .comics {
     margin: 2%;

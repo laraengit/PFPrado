@@ -103,6 +103,11 @@
   color: #FDAFC2;
 }
 
+.separaSeccNegra {
+  font-family: "Mulish", sans-serif;
+  color: #222b2b;
+}
+
 .separaSecc, .separaSecc2 {
   font-family: "Mulish", sans-serif;
   color: white;
@@ -138,12 +143,18 @@
   color: #f3f5f1;
 }
 
+.botones {
+  font-family: "Karla", sans-serif;
+  color: #f3f5f1;
+}
+
 .pie {
   text-decoration: none;
   font-family: "Karla", sans-serif;
   color: #222b2b;
 }
 .pie a {
+  text-decoration: none;
   font-family: "Karla", sans-serif;
   color: #222b2b;
 }
@@ -154,8 +165,11 @@
 /* Responsive */
 /* Mobile */
 @media (max-width: 700px) {
-  div.logo, div.copyright {
-    visibility: hidden;
+  .imgLogoGrande {
+    display: none;
+  }
+  div.copyright {
+    display: none;
   }
   .headerHeight {
     height: 80px;
@@ -163,17 +177,17 @@
   #mod_der, #mod_izq {
     width: 100%;
     /* padding: 20px; */
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
   }
   #contacto > form > div {
     width: 60%;
   }
   .destacado2 {
-    font-size: 28pt;
+    font-size: 25pt;
   }
   .destacado1 {
-    font-size: 35pt;
+    font-size: 30pt;
   }
   .botones a {
     font-size: 9pt;
@@ -197,27 +211,30 @@
     font-size: 9pt;
   }
   .apartLetra {
-    font-size: 9pt;
+    font-size: 10pt;
   }
 }
 /* Tablet */
 @media (min-width: 701px) and (max-width: 1200px) {
+  .imgLogoChica {
+    display: none;
+  }
   .headerHeight {
     height: 80px;
   }
   #mod_der, #mod_izq {
     width: 45%;
     padding: 1%;
-    margin: 2%;
+    margin: 3%;
   }
   #contacto > form > div {
     width: 40%;
   }
   .destacado2 {
-    font-size: 36.4pt;
+    font-size: 32.5pt;
   }
   .destacado1 {
-    font-size: 45.5pt;
+    font-size: 39pt;
   }
   .botones a {
     font-size: 11.7pt;
@@ -241,27 +258,30 @@
     font-size: 11.7pt;
   }
   .apartLetra {
-    font-size: 11.7pt;
+    font-size: 13pt;
   }
 }
 /* Computadora grande */
 @media (min-width: 1201px) {
+  .imgLogoChica {
+    display: none;
+  }
   .headerHeight {
     height: 80px;
   }
   #mod_der, #mod_izq {
     width: 45%;
     padding: 1%;
-    margin: 2%;
+    margin: 5%;
   }
   #contacto > form > div {
     width: 40%;
   }
   .destacado2 {
-    font-size: 39.2pt;
+    font-size: 35pt;
   }
   .destacado1 {
-    font-size: 49pt;
+    font-size: 42pt;
   }
   .botones a {
     font-size: 12.6pt;
@@ -285,7 +305,7 @@
     font-size: 12.6pt;
   }
   .apartLetra {
-    font-size: 12.6pt;
+    font-size: 14pt;
   }
 }
 /* Estructura */
@@ -413,18 +433,25 @@
 }
 
 #mod_der, #mod_izq {
-  display: inline-block;
+  margin: 10%;
+  text-align: center;
+  display: inline;
 }
 
 #mod_izq {
   border: 0;
 }
 
-#modulos section {
+#mod_der .contengoBotones {
+  text-align: center;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+#mod_der .contengoBotones a {
+  width: 15%;
+  padding: 0.5%;
 }
 
 .comics {
@@ -520,6 +547,10 @@
   text-decoration: none;
 }
 
+.justify {
+  text-align: justify;
+}
+
 a.link {
   text-decoration: none;
 }
@@ -530,6 +561,7 @@ a.link :hover {
 
 .hoverBoton {
   border: 3px solid rgba(255, 255, 255, 0);
+  text-decoration: none;
 }
 .hoverBoton:hover {
   border: 3px solid rgba(255, 255, 255, 0.484);
@@ -537,6 +569,7 @@ a.link :hover {
 
 .relleno {
   margin: 15px;
+  padding: 5px;
   border-radius: 5px;
 }
 
@@ -551,7 +584,6 @@ a.link :hover {
 }
 
 .botones a {
-  /*  background-color: #7cbd9e; */
   display: inline-block;
   width: 30%;
   border-radius: 10px;

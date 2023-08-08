@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+.justify{
+    text-align: justify;
+}
 a.link {
     text-decoration: none;
 }
@@ -15,6 +18,7 @@ a.link :hover {
 }
 .hoverBoton{
     border:3px solid rgba(255, 255, 255, 0);
+    text-decoration: none;
     &:hover{
         border:3px solid rgba(255, 255, 255, 0.484);
     }
@@ -22,6 +26,7 @@ a.link :hover {
 
 .relleno {
     margin: 15px;
+    padding: 5px;
     border-radius: 5px;
     
 }
@@ -38,7 +43,6 @@ a.link :hover {
 
 .botones {
     a{
-        /*  background-color: #7cbd9e; */
          display: inline-block;
          width: 30%;
          border-radius: 10px;
