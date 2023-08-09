@@ -688,15 +688,7 @@ section.info a :hover {
   color: #7bbfbf;
 }
 
-/* Animaciones */
-/* @keyframes anima-input {
-    50%{
-        background-color: rgba(188, 233, 250, 0.479);
-    }
-    100%{
-        background-color: rgb(188, 233, 250);
-    }
-} */
+
 /* Formularios */
 .input {
   padding: 15px;
