@@ -22,15 +22,18 @@
         width: 90%;
         position: relative;
         text-align: left;
-        &:not(.boton){
-            transition: all 1s;
-            &:focus{
-                background-color: rgb(188, 233, 250);
-            }
-            &:not(:placeholder-shown){
-                background-color: rgb(192, 226, 192);
+        &[type=text],&[type=pass],&[type=date]{
+            &:not(.boton){
+                transition: all 1s;
+                &:focus{
+                    background-color: rgb(188, 233, 250);
+                }
+                /* &:not(:placeholder-shown){
+                    background-color: rgb(192, 226, 192);
+                } */
             }
         }
+        
         
     }
     label{
@@ -59,9 +62,9 @@
         &:focus{
             background-color: rgb(188, 233, 250);
         }
-        &:not(:placeholder-shown){
+        /* &:not(:placeholder-shown){
             background-color: rgb(192, 226, 192);
-        }
+        } */
     }
 
     .check{

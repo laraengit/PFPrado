@@ -78,7 +78,7 @@ a.link :hover {
         &.filtros{
             width:60%;
             margin: 1% 20% ;
-            text-align: center;
+            text-align: left;
             background-color: map-get($colores, celeste);
             ul{
                 padding: 0%;
@@ -120,9 +120,10 @@ a.link :hover {
 .dataValid {
     li{
         margin: 10px;
-        text-align: center;
+        text-align: left;
     }
     input{
+        position: relative;
         bottom: 0;
      }
 }

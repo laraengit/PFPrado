@@ -255,8 +255,8 @@
     .filtros {
         ul{
             display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+            flex-flow: row wrap;
+            justify-content: space-around;
         }
     }
 }
@@ -278,6 +278,14 @@
                 flex-flow: row nowrap;
                 align-items: center;
                 justify-content: space-around;
+                .dataValid, .lugar {
+                    width: 50%;
+                }
+            }
+            input {
+                position: relative;
+                bottom: 0%;
+                left: 0;
             }
         }
     }

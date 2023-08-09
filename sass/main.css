@@ -537,6 +537,14 @@
   align-items: center;
   justify-content: space-around;
 }
+#listadoLugares li.itemGuia > div .dataValid, #listadoLugares li.itemGuia > div .lugar {
+  width: 50%;
+}
+#listadoLugares li.itemGuia input {
+  position: relative;
+  bottom: 0%;
+  left: 0;
+}
 
 /* Diseño */
 * {
@@ -608,7 +616,7 @@ a.link :hover {
 #main nav.filtros {
   width: 60%;
   margin: 1% 20%;
-  text-align: center;
+  text-align: left;
   background-color: #7bbfbf;
 }
 #main nav.filtros ul {
@@ -643,9 +651,10 @@ a.link :hover {
 
 .dataValid li {
   margin: 10px;
-  text-align: center;
+  text-align: left;
 }
 .dataValid input {
+  position: relative;
   bottom: 0;
 }
 
@@ -704,17 +713,14 @@ section.info a :hover {
   position: relative;
   text-align: left;
 }
-.input input:not(.boton) {
+.input input[type=text]:not(.boton), .input input[type=pass]:not(.boton), .input input[type=date]:not(.boton) {
   transition: all 1s;
+  /* &:not(:placeholder-shown){
+      background-color: rgb(192, 226, 192);
+  } */
 }
-.input input:not(.boton):focus {
+.input input[type=text]:not(.boton):focus, .input input[type=pass]:not(.boton):focus, .input input[type=date]:not(.boton):focus {
   background-color: rgb(188, 233, 250);
-}
-.input input:not(.boton):not(:-moz-placeholder-shown) {
-  background-color: rgb(192, 226, 192);
-}
-.input input:not(.boton):not(:placeholder-shown) {
-  background-color: rgb(192, 226, 192);
 }
 .input label {
   display: block;
@@ -737,15 +743,12 @@ section.info a :hover {
   width: 90%;
   color: rgb(48, 53, 55);
   transition: all 1s;
+  /* &:not(:placeholder-shown){
+      background-color: rgb(192, 226, 192);
+  } */
 }
 .input textarea:focus {
   background-color: rgb(188, 233, 250);
-}
-.input textarea:not(:-moz-placeholder-shown) {
-  background-color: rgb(192, 226, 192);
-}
-.input textarea:not(:placeholder-shown) {
-  background-color: rgb(192, 226, 192);
 }
 .input .check {
   display: inline;
